@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 45vh;
+  margin-bottom: 20vw;
 }
 header {
   width: 100%;

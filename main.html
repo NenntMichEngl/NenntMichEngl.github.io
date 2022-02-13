@@ -11,26 +11,26 @@
 
 </head>
 <script src="script.js"></script>
-<body>
+<body onload="hide()">
   <header>
     <div class="head">
       <p>Gutscheinsammlung von Lena</p>
     </div>
   </header>
-  <div class="wrapper">
+  <div class="wrapper" id="kochen">
       <div class="modal">
         <span class="emoji">🍔</span>
         <h1>Ich koche für dich</h1>
         <p>Eine Mahlzeit die ich ganz alleine für dich Koche :) <br> gerne auch vegetarisch 🥦</p>
-        <a class="modal-btn" onclick="test('kochen')" >Gutschein einlösen</a>
+        <a class="modal-btn" onclick="test('kochen')" id="kochen_btn" >Gutschein einlösen</a>
       </div>  
   </div>
-  <div class="wrapper">
+  <div class="wrapper" id="kino">
     <div class="modal">
       <span class="emoji">📽️</span>
       <h1>Kino zusammen</h1>
       <p>Ich wollte sowieso mal mit dir ins kino</p>
-      <a onclick="test('kino')" class="modal-btn">Gutschein einlösen</a>
+      <a onclick="test('kino')" class="modal-btn" id="kino_btn">Gutschein einlösen</a>
     </div>  
 </div>
 </body>

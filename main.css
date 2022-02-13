@@ -1,7 +1,7 @@
 :root {
     --border-color: #D7DBE3;
     font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
-    --green: #0CD977;
+    --green: #d9a90c;
     --red: #FF1C1C;
     --pink: #FF93DE;
     --purple: #5767ED;
@@ -89,7 +89,7 @@
       margin: 0 auto;
     padding: 1.5rem 2rem;
     border-radius: 0.2rem;
-    background-color: rgb(171, 255, 210);
+    background-color: #d9a90c70;
     border: none;
     width: 40vw;
     display: block;

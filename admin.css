@@ -1,14 +1,16 @@
 :root {
-    --border-color: #D7DBE3;
+    --border-color: #000000;
     font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
-    --green: #d9a90c;
+    --green: #32fa00;
     --red: #FF1C1C;
     --pink: #FF93DE;
     --purple: #5767ED;
     --yellow: #FFC61C;
     --rotation: 0deg;
     }
-  
+body{
+  background-color: #333;
+}
   .wrapper {
     display: flex;
     justify-content: center;
@@ -17,12 +19,12 @@
   }
   
   .modal {
-    
-    width: 30rem;
+
+    width: 29rem;
     margin: 0 auto;
     border: 1px solid var(--border-color);
     box-shadow: 0 1px 2px rgba(0,0,0,0.16);
-    background-color: #fff;
+    background-color: rgb(42, 42, 42);
     border-radius: 0.25rem;
     padding: 2rem;
     z-index: 1;
@@ -44,6 +46,7 @@
     line-height: 1.5rem;
     text-align: center;
   }
+  
   .modal-btn {
     display: block;
     margin: 0 -2rem -2rem -2rem;
@@ -80,20 +83,22 @@
     display: block;
     transition: all 0.3s;
     transform: translateY(0rem);
+    
   }
   .form__input {
     font-family: 'Roboto', sans-serif;
-    color: #333;
+    color: rgb(255, 255, 255);
     font-size: 1.2rem;
       margin: 0 auto;
     padding: 1.5rem 2rem;
     border-radius: 0.2rem;
-    background-color: #d9a90c55;
+    background-color: #4ebb0f70;
     border: none;
     width: 40vw;
     display: block;
     border-bottom: 0.3rem solid transparent;
     transition: all 0.3s;
+    margin-bottom: 10%;
   }
   
   .form__input:placeholder-shown + .form__label {

@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="confetti.js"></script>
+    <script src="server.js"></script>
     <link rel="stylesheet" href="styledate.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
 </head>
 <body onload="start()">
     <div class="wrapper">
@@ -22,7 +20,7 @@
             <input type="text" class="form__input" id="name" placeholder="dd/mm" required="" />
             <label for="name" class="form__label">Beliebiges Datum</label>
           </div>
-          <a onclick="kino_send()" class="modal-btn">Mich benachrichtigen</a>
+          <a onclick="date()" class="modal-btn" id="btn">Mich benachrichtigen</a>
         </div>
     </div>
 </body>

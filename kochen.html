@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="confetti.js"></script>
+    <script src="server.js"></script>
     <link rel="stylesheet" href="styledate.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-<body>
+<body onload="start()">
     <div class="wrapper">
         <div class="modal">
           <span class="emoji">🌹</span>
@@ -19,7 +20,7 @@
             <input type="text" class="form__input" id="name" placeholder="dd/mm" required="" />
             <label for="name" class="form__label">Beliebiges Datum</label>
           </div>
-          <a onclick="kochen_send()" class="modal-btn">Mich benachrichtigen</a>
+          <a onclick="kochen()" class="modal-btn" id="btn">Mich benachrichtigen</a>
         </div>
     </div>
 </body>

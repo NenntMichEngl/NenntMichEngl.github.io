@@ -1,37 +1,13 @@
-function test()
+function start()
 {
-    window.location.href = 'date.html';
-}
-function kino_send()
-{
-    if(document.getElementById("name").value != "")
+    if(localStorage.getItem("login") != "true")
     {
-        notification()
-        localStorage.setItem("kino", "f");
-        notification("Lena will am " + document.getElementById("name").value + "  mit dir ins Kino gehen")
-        window.location.href = 'main.html';
+        window.location.href = 'index.html';
     }
+    document.getElementById("btn").innerHTML = "Termin '" + localStorage.getItem("action") + "' ausmachen";
+
 }
-function film_send()
+function date()
 {
-    if(document.getElementById("name").value != "")
-    {
-        localStorage.setItem("film", "f");
-        notification("Lena will am " + document.getElementById("name").value + "  mit dir einen Film Marathon machen")
-        window.location.href = 'main.html';
-    }
-}
-function kochen_send()
-{
-    if(document.getElementById("name").value != "")
-    {
-        localStorage.setItem("kochen", "f");
-        notification("Lena will am " + document.getElementById("name").value + "  mit dir kochen")
-        window.location.href = 'main.html';
-    }
-}
-function notification(message)
-{
-    var s = "mailto:maxi.engl@outlook.de?subject="+message+"&body="+message;
-    window.open(s);
+    make_date(localStorage.getItem("action"), document.getElementById("name").value);
 }
